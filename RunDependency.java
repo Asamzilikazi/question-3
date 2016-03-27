@@ -1,4 +1,4 @@
-package za.ac.mzilikazi.fixed;
+package za.ac.mzilikazi.violated;
 
 import javafx.concurrent.Worker;
 
@@ -7,14 +7,11 @@ import javafx.concurrent.Worker;
  */
 public class RunDependency {
 
-    public static void main(String[] args)
-    {
-              EmployeeInterface worker = new Employee();
-              EmployeeInterface hardWorker = new Supervisor();
-              Manager manager = new Manager();
-              manager.setWorker(worker);
-              manager.manage();
-              manager.setWorker(hardWorker);
-              manager.manage();
-    }
+    /*Manager manager = new Manager();
+    Employee employee = new Employee();
+    Supervisor supervisor = new Supervisor();
+
+    manager.setWorker(employee);
+    manager.manage();
+    supervisor.work();*/
 }
