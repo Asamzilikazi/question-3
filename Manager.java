@@ -1,18 +1,20 @@
-package za.ac.mzilikazi.fixed;
+package za.ac.mzilikazi.violated;
+
+import javafx.concurrent.Worker;
 
 /**
- * Created by Asavela on 2016-03-27.
+ * Created by mandisi on 2016-03-27.
  */
 public class Manager {
 
-    EmployeeInterface worker;
+    Employee employee;
 
-    public void setWorker(EmployeeInterface worker)
-    {
-        this.worker = worker;
-    }
+    public void setWorker(Employee employee)
+       {
+           this.employee = employee;
+       }
     public void manage()
-     {
-         worker.work();
-     }
+    {
+        employee.work();
+    }
 }
